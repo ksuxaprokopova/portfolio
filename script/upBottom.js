@@ -14,3 +14,8 @@ $("#about_link").on("click", function(e){
     e.preventDefault();   
     $("html, body").animate({scrollTop: $("#about").offset().top}, 1000)
 })
+
+$("#about_click").on("click", function(e){
+    e.preventDefault();   
+    $("html, body").animate({scrollTop: $("#portfolio").offset().top}, 1000)
+})

@@ -963,7 +963,7 @@ body{
     border-radius: 50%;
     bottom: 100px;
     right: 50px;
-    background-color: rgba(49, 65, 197, .5);
+    background-color: rgba(49, 65, 197, 1);
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -1053,9 +1053,9 @@ body{
     }
 
     .header_menu_check{
-        top: 65px;
-        right: 65px;
-        position: fixed;
+        top: 8%;
+        right: 12%;
+        position: relative;
         z-index: 4;
     }
 
@@ -1066,18 +1066,18 @@ body{
 
     .header_menu_checkbox{
         position: fixed;
-        width: 18px;
-        height: 18px;
+        width: 100px;
+        height: 55px;
         margin: 0;
-        top: 56px;
-        right: 48px;
+        top: 6%;
+        right: 8%;
         opacity: 0;
         z-index: 5;
     }
 
     .header_menu_checkbox:checked ~ .header_menu_check > .check:first-of-type{
        
-        transform: rotate(45deg) translate(0px);
+        transform: rotate(45deg) translate(-30px, 30px);
         position: fixed;
     }
 
@@ -1087,8 +1087,7 @@ body{
     }
 
     .header_menu_checkbox:checked ~ .header_menu_check > .check:last-of-type{
-        
-        transform: rotate(-45deg) translate(0px);
+        transform: rotate(-45deg) translate(-30px,  -30px);
         position: fixed;
     }
 
@@ -1096,8 +1095,8 @@ body{
         display: block;
         position: fixed;
         top: 0;
-        left: 30%;
-        bottom: 0;
+        left: 45%;
+        bottom: 50%;
         right: 0;
         border-radius: 20px;
         text-align: center;
@@ -1106,7 +1105,7 @@ body{
 
     .header_ul{
         flex-direction: column;
-        padding-top: 40px;
+        padding-top: 100px;
         margin-right: 0;
     }
 
@@ -1115,7 +1114,7 @@ body{
     }
 
     .header_li{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
 
@@ -1253,6 +1252,10 @@ body{
     .v-pre_title{
         max-width: 462px;
         margin-bottom: 14px;
+    }
+
+    .v-pre_title_orange{
+        margin: 0 auto;
     }
 
     .v-title{
